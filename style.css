@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #282c34;
+    color: #ffffff;
+    margin: 0;
+}
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./assest/background.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-position: top; */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 98%;
+    height: 85%;
+}
+input {
+    width: 80px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #565a6a;
+    color: #ffffff;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #4a4e63;
+}
+#start-btn { background-color: #4caf50; }
+#pause-btn { background-color: #ff9800; }
+#continue-btn { background-color: #2196f3; }
+#stop-btn { background-color: #f44336; }
+#reset-btn { background-color: #9c27b0; }
+#countdown {
+    font-size: 40vh; /* 70% of viewport height */
+    margin: 20px;
+    font-weight: bold;
+}
+.blink {
+    animation: blinker 1s linear infinite;
+    color: red;
+}
+@keyframes blinker {
+    50% { opacity: 0; }
+}

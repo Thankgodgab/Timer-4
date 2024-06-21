@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMHOS Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <input type="number" id="hours-input" placeholder="Hours" min="0">
+            <input type="number" id="minutes-input" placeholder="Minutes" min="0" max="59">
+            <input type="number" id="seconds-input" placeholder="Seconds" min="0" max="59">
+        </div>
+        <div>
+            <button id="start-btn">Start</button>
+            <button id="pause-btn">Pause</button>
+            <button id="continue-btn">Continue</button>
+            <!-- <button id="reset-btn">Reset</button> -->
+        </div>
+        <div id="countdown">00:00:00</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
